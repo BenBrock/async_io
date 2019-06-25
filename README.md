@@ -1,9 +1,6 @@
 # async_io
-C++ Asynchronous File IO with Futures
+`async_io` provides a C++ asynchronous file IO API with futures.
 
-`async_io` is provides a C++ asynchronous file IO API with futures.
-It's implemented using the [POSIX AIO](http://man7.org/linux/man-pages/man7/aio.7.html)
-interface.
 
 ```c++
   // Read bytes 10 -> 100 from "file.dat"
@@ -16,3 +13,6 @@ interface.
   // Block on previously issued IO
   auto data = future.get();
 ```
+
+It's implemented using the [POSIX AIO](http://man7.org/linux/man-pages/man7/aio.7.html)
+interface.
