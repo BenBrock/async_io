@@ -109,4 +109,6 @@ struct AsyncRead {
   FileSpan span_;
 };
 
+using read = AsyncRead;
+
 } // end async_io

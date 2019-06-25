@@ -98,4 +98,6 @@ struct AsyncWrite {
   size_t offset_;
 };
 
+using write = AsyncWrite;
+
 } // end async_io
